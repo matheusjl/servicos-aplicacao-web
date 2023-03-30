@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Aula 12</title>
+    </head>
+    <body style="background-color:rgb(7, 192, 7) ;"></body>
+        <h1 style="text-align: center;"> Formulario HTML</h1>
+        <hr>
+        <h2>Input Text</h2>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome"name="nome" value="matheus">
+            <br><br>
+            <label for="cidade">cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"value="Campina Verde">
+        </form>
+        <hr>
+        <h2>Input Password</h2>
+        <form>
+            <label for="nome">Usuario:</label><br>
+            <input type="text"id="nome" name="nome">
+            <br><br>
+            <label for="senha">senha:</label><br>
+            <input type="password" id="senha" name="senha">
+        </form>
+        <hr>
+        <h2> Input Submit</h2>
+        <form action="welcome.html" method="GET">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value="Matheus">
+            <br><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" value="Campina Verde"> 
+            <br><br>
+            <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <h2>Input Reset</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome"name="nome" value="matheus">
+                <br><br>
+                <label for="cidade">cidade:</label><br>
+                <input type="text" id="cidade" name="cidade"value="Campina Verde">
+                <br><br>
+                <input type="reset" value="Redefinir">
+            </form>
+            <hr>
+            <h2> Input radio</h2>
+            <p> Escolha sua comida favorita</p>
+            <form>
+                <input type="radio" id="pizza" name="comida_favorita" value="pizza">
+                <label for="pizza">Pizza</label><br>
+                <input type="radio" id="lanche" name="comida_favorita"value="lanche">
+                <label for="lanche">Lanche</label><br>
+                <input type="radio" id="lasanha" name="comida_favorita" value="lasanha">
+                <label for="lasanha">Lasanha</label><br>
+            </form>
+            <hr>
+        <h2> Input Checkbox</h2>
+        <form>
+            <input type="checkbox" id="bicicleta" name="bicicleta" value="bicicleta">
+            <label for="bicicleta">Eu tenho uma bicicleta</label><br>
+            <input type="checkbox" id="skate" name="skate"value="skate">
+            <label for="skate">Eu tenho um skate</label><br>
+            <input type="checkbox" id="moto" name="moto" value="moto">
+            <label for="moto">Eu tenho uma moto</label><br>
+        </form>
+        <hr>
+        <h2> Input button</h2>
+        <form>
+            <input type="button" onclick="alert('Hello World')" value="clique aqui!">
+        </form>
+        <hr>
+        <h2> Input color</h2>
+        <form>
+            <label for="favcolor">Selecione a sua cor favorita:</label>
+            <br>
+            <input type="color" id="favcolor" name="favcolor">
+        </form>
+        <hr>
+        <h2> Input date</h2>
+        <form>
+            <label for="aniversario">Aniversario:</label>
+            <br>
+            <input type="date" id="aniversario" name="aiversario">
+        </form>
+        <hr>
+        <h2> Input dateTime-local</h2>
+        <form>
+            <label for="aniversario">Aniversario ( data e hora):</label>
+            <br>
+            <input type="dateTime-local" id="aniversario" name="aniversario">
+        </form>
+        <hr>
+         <h2> Input dateTime-local</h2>
+        <form>
+            <label for="aniversario">Aniversario ( data e hora):</label>
+            <br>
+            <input type="dateTime-local" id="aniversario" name="aniversario">
+        </form>
+            <hr>
+            <h2> Input image</h2>
+            <form action="welcome.html">
+                <br>
+                <input type="image" src="download (1).jpg" alt="Submit" width="48px" height="48px">
+                </form>
+                <hr>
+                <h2> Input file</h2>
+                <form>
+                    <label for="meuArquivo">Selecione um arquivo:</label>
+                    <br>
+                    <input type="file" id="meuArquivo" name="meuArquivo">
+                </form>
+                <hr>
+                <h2> Input month</h2>
+                <form>
+                    <label for="mesAnoAniversario">Aniversario ( mes e ano):</label>
+                    <br>
+                    <input type="month" id="mesAnoAniversario" name="mesAnoAniversario">
+                </form>
+                <hr>
+                <h2> Input number</h2>
+                <form>
+                    <label for="quatity">Quantidade:</label>
+                    <br>
+                    <input type="number" id="quatity" name="quatity" min="1" max="5">
+                </form>
+                <hr>
+                <h2> Input range</h2>
+                <form>
+                    <label for="vol">Volume(entre 0 e 100):</label>
+                    <br>
+                    <input type="range" id="vol" name="vol" min="0" max="100" step="10">
+                </form>
+                <hr>
+                <h2> Input search</h2>
+                <form>
+                    <label for="pesquisar"> Pesquisar:</label>
+                    <br>
+                    <input type="search" id="pesquisar" name="pesquisar">
+                </form>
+                <hr>
+                <h2> Input telefone</h2>
+                <form>
+                    <label for="telefone">Telefone:</label>
+                    <br>
+                    <input type="tel" id="telefone" name="telefone">
+                </form>
+                <hr>
+                <h2> Input time</h2>
+                <form>
+                    <label for="hora">:</label>
+                    <br>
+                    <input type="time" id="hora" name="hora">
+                </form>
+                <hr>
+                <h2> Input week</h2>
+                <form>
+                    <label for="semana"> Selecione a semana:</label>
+                    <br>
+                    <input type="week" id="semana" name="semana">
+                </form>
+        </body>
+        </html>
