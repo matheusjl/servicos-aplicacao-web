@@ -8,23 +8,38 @@
             function validar(){
                 const anoAtual = 2023;
                 const idadeMinima = 18;
-            var ano = document.getElementById('data').value;
-           var idade = document.getElementById('idade').value;
-            
-            if( anoAtual - ano ){
-              alert('ola {nome}');
+
+                var nome = document.getElementById('nome').value;
+                var email = document.getElementById('email').value;
+                var numero = document.getElementById('numero').value;
+
+                var ano = document.getElementById('ano').value;
+                var idade = anoAtual - ano;
+
+            if( idade >= 18 ){
+              alert('Ola ' + nome + ', iremos enviar um email de confiramação para seu endereco eletronico' + email + '. Tambem sera enviado um codigo de confirmacao pelo seu telefone' + numero + '. Muito obrigado e boa sorte!');
             } else{
-                alert('');
+                alert('Obrigado,' + nome + '. Infelizmente nao poderemos seguir com o seu cadastro pois sua idade nao permite que voce realize o vestibular' );
             }
             
             }
+
+            function limparFormulario(){
+
+            document.getElementById('nome').value='';
+            document.getElementById('numero').value='';
+            document.getElementById('email').value='';
+            document.getElementById('ano').value='';
+            document.getElementById('cidade').value='';
+            }
+
         </script>
     
     
     </head>
     <body>
         <form>
-            <div>
+            
                 <label for="nome">Nome</label><br>
                 <input type="text" name="nome" id="nome"><br>
 
@@ -34,18 +49,17 @@
                 <label for="email">E-mail</label><br>
                 <input type="email" name="email" id="email"><br>
 
-                <label for="ano">Ano de nascimento</label><br>
-                <input type="date" name="ano" id="ano" ><br>
+                <label for="ano">Ano de aniversario</label><br>
+                <input type="number"  id="ano" ><br>
 
                 <label for="cidade">Cidade</label><br>
                 <input type="nome" name="cidade" id="cidade"><br>
                  <br>
-
                 
-                <button onclick="validar('data')">validar</button>
-               
-                <button onclick="validar('idadeMinima')">click aqui</button>
-            </div>
+                 <button type="button" onclick="validar()">Validar</button>
+                 <button type="button" onclick="limparFormulario()">Limpar Formulario</button>
+
+           
         </form>
 
 
